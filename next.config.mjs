@@ -8,6 +8,11 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    domains: [],
+    remotePatterns: [],
+  },
+  experimental: {
+    optimizePackageImports: ['lucide-react'],
   },
 }
 
