@@ -1088,6 +1088,27 @@ export default function HomeExpressConstructionPage() {
           </div>
         </div>
       )}
+
+      {/* Floating Action Buttons */}
+      <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-40">
+        {/* Call Button */}
+        <a 
+          href="tel:2017536453"
+          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 group"
+          title="Call (201) 753-6453"
+        >
+          <Phone className="h-6 w-6 group-hover:animate-pulse" />
+        </a>
+        
+        {/* Email Button */}
+        <a 
+          href="mailto:expressconstruction113@gmail.com"
+          className="bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 group"
+          title="Email expressconstruction113@gmail.com"
+        >
+          <Mail className="h-6 w-6 group-hover:animate-pulse" />
+        </a>
+      </div>
     </div>
   )
 }
