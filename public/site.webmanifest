@@ -1,0 +1,21 @@
+{
+  "name": "Home Express Construction LLC",
+  "short_name": "Home Express",
+  "description": "New Jersey's premier construction contractor providing expert roofing, siding, chimney, and masonry services.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f2937",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["business", "construction", "home-improvement"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -293,7 +293,7 @@ export default function HomeExpressConstructionPage() {
             <div className="hidden md:flex items-center space-x-4">
               <div className="flex items-center space-x-2 text-blue-600">
                 <Phone className="h-4 w-4" />
-                <span className="font-semibold">(201) 753-6453</span>
+                <a href="tel:+12017536453" className="font-semibold hover:text-green-600 transition-colors">+1 (201) 753-6453</a>
               </div>
               <Button className="bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all" onClick={() => setContactModalOpen(true)}>
                 Free Estimate
@@ -310,15 +310,15 @@ export default function HomeExpressConstructionPage() {
           {isMenuOpen && (
             <div className="md:hidden mt-4 pb-4 border-t">
               <nav className="flex flex-col space-y-4 mt-4">
-                <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium">Home</Link>
-                <Link href="/about" className="text-gray-700 hover:text-blue-600 font-medium">About</Link>
-                <Link href="#services" className="text-gray-700 hover:text-blue-600 font-medium">Services</Link>
-                <Link href="#portfolio" className="text-gray-700 hover:text-blue-600 font-medium">Portfolio</Link>
-                <Link href="#testimonials" className="text-gray-700 hover:text-blue-600 font-medium">Reviews</Link>
-                <Link href="#contact" className="text-gray-700 hover:text-blue-600 font-medium">Contact</Link>
+                <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium" onClick={() => setIsMenuOpen(false)}>Home</Link>
+                <Link href="/about" className="text-gray-700 hover:text-blue-600 font-medium" onClick={() => setIsMenuOpen(false)}>About</Link>
+                <Link href="#services" className="text-gray-700 hover:text-blue-600 font-medium" onClick={() => setIsMenuOpen(false)}>Services</Link>
+                <Link href="#portfolio" className="text-gray-700 hover:text-blue-600 font-medium" onClick={() => setIsMenuOpen(false)}>Portfolio</Link>
+                <Link href="#testimonials" className="text-gray-700 hover:text-blue-600 font-medium" onClick={() => setIsMenuOpen(false)}>Reviews</Link>
+                <Link href="#contact" className="text-gray-700 hover:text-blue-600 font-medium" onClick={() => setIsMenuOpen(false)}>Contact</Link>
                 <div className="flex items-center space-x-2 text-blue-600 pt-2">
                   <Phone className="h-4 w-4" />
-                  <span className="font-semibold">(201) 753-6453</span>
+                  <a href="tel:+12017536453" className="font-semibold hover:text-green-600 transition-colors">+1 (201) 753-6453</a>
                 </div>
                 <Button className="bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all" onClick={() => { setContactModalOpen(true); setIsMenuOpen(false); }}>
                   Free Estimate
@@ -357,7 +357,7 @@ export default function HomeExpressConstructionPage() {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
-                <a href="tel:2017536453">
+                <a href="tel:+12017536453">
                   <Button
                     size="lg"
                     className="bg-white text-blue-700 border border-blue-600 hover:bg-blue-50 hover:text-blue-900 px-8 py-4 text-lg font-bold shadow-xl hover:shadow-2xl transition-all transform hover:scale-105"
@@ -721,8 +721,8 @@ export default function HomeExpressConstructionPage() {
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">Call Us Today</h3>
                     <p className="text-gray-600 mb-4">Speak directly with our experts</p>
-                    <a href="tel:2017536453" className="text-3xl font-bold text-green-600 hover:text-green-700 transition-colors">
-                      (201) 753-6453
+                    <a href="tel:+12017536453" className="text-3xl font-bold text-green-600 hover:text-green-700 transition-colors">
+                      +1 (201) 753-6453
                     </a>
                     <p className="text-sm text-gray-500 mt-2">Available 24/7 for emergencies</p>
                   </div>
@@ -821,11 +821,11 @@ export default function HomeExpressConstructionPage() {
               Storm damage? Roof leak? Structural emergency? We're here to help immediately!
             </p>
             <a 
-              href="tel:2017536453" 
+              href="tel:+12017536453" 
               className="inline-flex items-center bg-white text-red-600 font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
             >
               <Phone className="mr-3 h-6 w-6" />
-              Call Emergency Line: (201) 753-6453
+              Call Emergency Line: +1 (201) 753-6453
             </a>
           </div>
         </div>
@@ -868,7 +868,7 @@ export default function HomeExpressConstructionPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>(201) 753-6453</li>
+                <li><a href="tel:+12017536453" className="hover:text-white transition-colors">+1 (201) 753-6453</a></li>
                 <li>expressconstruction113@gmail.com</li>
                 <li>24 Central Avenue</li>
                 <li>Ridgefield Park, NJ 07066</li>
@@ -946,7 +946,7 @@ export default function HomeExpressConstructionPage() {
                   
                   {/* Phone Contact */}
                   <a 
-                    href="tel:2017536453" 
+                    href="tel:+12017536453" 
                     className="group flex items-center space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 border border-gray-200 hover:border-blue-300"
                   >
                     <div className="bg-green-100 group-hover:bg-green-200 p-3 rounded-full transition-colors">
@@ -954,7 +954,7 @@ export default function HomeExpressConstructionPage() {
                     </div>
                     <div>
                       <div className="font-semibold text-gray-900 group-hover:text-green-600 transition-colors">Call Now</div>
-                      <div className="text-lg font-bold text-green-600">(201) 753-6453</div>
+                      <div className="text-lg font-bold text-green-600">+1 (201) 753-6453</div>
                       <div className="text-sm text-gray-500">Available 24/7 for emergencies</div>
                     </div>
                   </a>
@@ -976,7 +976,7 @@ export default function HomeExpressConstructionPage() {
 
                   {/* WhatsApp Contact */}
                   <a 
-                    href="https://wa.me/2017536453" 
+                    href="https://wa.me/+12017536453" 
                     className="group flex items-center space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 border border-gray-200 hover:border-green-300"
                   >
                     <div className="bg-green-100 group-hover:bg-green-200 p-3 rounded-full transition-colors">
@@ -1093,9 +1093,9 @@ export default function HomeExpressConstructionPage() {
       <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-40">
         {/* Call Button */}
         <a 
-          href="tel:2017536453"
+          href="tel:+12017536453"
           className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 group"
-          title="Call (201) 753-6453"
+          title="Call +1 (201) 753-6453"
         >
           <Phone className="h-6 w-6 group-hover:animate-pulse" />
         </a>

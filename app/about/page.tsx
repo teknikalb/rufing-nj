@@ -149,7 +149,7 @@ export default function AboutPage() {
             <div className="hidden md:flex items-center space-x-4">
               <div className="flex items-center space-x-2 text-blue-600">
                 <Phone className="h-4 w-4" />
-                <span className="font-semibold">(201) 753-6453</span>
+                <a href="tel:+12017536453" className="font-semibold hover:text-green-600 transition-colors">+1 (201) 753-6453</a>
               </div>
               <Link href="/#contact">
                 <Button className="bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all">
@@ -181,7 +181,7 @@ export default function AboutPage() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <a href="tel:2017536453">
+              <a href="tel:+12017536453">
                 <Button size="lg" variant="outline" className="border-blue text-blue-900 hover:bg-white hover:text-blue-900 px-8 py-4 text-lg transition-all transform hover:scale-105">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Now
@@ -231,7 +231,7 @@ export default function AboutPage() {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-blue-600" />
-                    <a href="tel:2017536453" className="text-blue-600 font-semibold hover:underline">(201) 753-6453</a>
+                    <a href="tel:+12017536453" className="text-blue-600 font-semibold hover:underline">+1 (201) 753-6453</a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-blue-600" />
@@ -347,10 +347,10 @@ export default function AboutPage() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <a href="tel:2017536453">
+                          <a href="tel:+12017536453">
               <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 hover:text-blue-800 px-8 py-4 text-lg transition-all transform hover:scale-105">
                 <Phone className="mr-2 h-5 w-5" />
-                Call (201) 753-6453
+                Call +1 (201) 753-6453
               </Button>
             </a>
           </div>
@@ -394,7 +394,7 @@ export default function AboutPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>(201) 753-6453</li>
+                <li><a href="tel:+12017536453" className="hover:text-white transition-colors">+1 (201) 753-6453</a></li>
                 <li>expressconstruction113@gmail.com</li>
                 <li>24 Central Avenue</li>
                 <li>Ridgefield Park, NJ 07066</li>
@@ -435,9 +435,9 @@ export default function AboutPage() {
       <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-40">
         {/* Call Button */}
         <a 
-          href="tel:2017536453"
+                      href="tel:+12017536453"
           className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 group"
-          title="Call (201) 753-6453"
+          title="Call +1 (201) 753-6453"
         >
           <Phone className="h-6 w-6 group-hover:animate-pulse" />
         </a>
